@@ -1,10 +1,10 @@
 .blockquote{
     &.blockquote-info{
-        border-color: $info-color;
-        color: $info-color;
+        border-color: #BDB369ff;
+        color: #BDB369ff;
 
-        small{
-            color: $info-color;
-        }
+        //large{
+        //    color: $info-color;
+        //}
     }
 }

@@ -216,7 +216,7 @@
     .dropdown-menu .dropdown-item{
         color: inherit;
         display: flex;
-        align-items: center;
+        align-items: end;
 
         i {
           margin-right: 5px;
@@ -253,7 +253,7 @@
 
             p.blockquote{
                 margin: 0 auto;
-                position: relative;
+                position: center;
                 right: 0;
             }
         }

@@ -23,14 +23,14 @@ function ExamplesNavbar() {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 699
+        document.body.scrollTop > 399
       ) {
         setNavbarColor("");
       } else if (
         document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 700
+        document.body.scrollTop < 400
       ) {
-        setNavbarColor("");
+        setNavbarColor("navbar-transparent");
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -52,18 +52,18 @@ function ExamplesNavbar() {
       <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
         <Container>
           <UncontrolledDropdown className="button-dropdown">
-            <DropdownToggle
-              caret
-              data-toggle="dropdown"
-              href="#pablo"
-              id="navbarDropdown"
-              tag="a"
-              onClick={(e) => e.preventDefault()}
-            >
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
-            </DropdownToggle>
+            {/*<DropdownToggle*/}
+            {/*  caret*/}
+            {/*  data-toggle="dropdown"*/}
+            {/*  href="#pablo"*/}
+            {/*  id="navbarDropdown"*/}
+            {/*  tag="a"*/}
+            {/*  onClick={(e) => e.preventDefault()}*/}
+            {/*>*/}
+            {/*  <span className="button-bar"></span>*/}
+            {/*  <span className="button-bar"></span>*/}
+            {/*  <span className="button-bar"></span>*/}
+            {/*</DropdownToggle>*/}
             <DropdownMenu aria-labelledby="navbarDropdown">
               <DropdownItem header tag="a">
                 Dropdown header
@@ -89,15 +89,13 @@ function ExamplesNavbar() {
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
+              // href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
               target="_blank"
               id="navbar-brand"
-            >
-              Now Ui Kit
-            </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
+            />
+            {/*<UncontrolledTooltip target="#navbar-brand">*/}
+            {/*  Designed by Invision. Coded by Creative Tim*/}
+            {/*</UncontrolledTooltip>*/}
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -120,53 +118,16 @@ function ExamplesNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink to="/index" tag={Link}>
-                  Back to Kit
+                  Home
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
+              <NavLink to="/index" tag={Link}>
+                  Events
                 </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
-              </NavItem>
+              <NavLink to="/gebed" tag={Link}>
+                  Gebedsruimtes
+              </NavLink>
+
             </Nav>
           </Collapse>
         </Container>

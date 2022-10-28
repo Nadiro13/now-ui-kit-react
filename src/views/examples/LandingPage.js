@@ -16,6 +16,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
+import Images from "../index-sections/Images";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -36,96 +37,64 @@ function LandingPage() {
       <ExamplesNavbar />
       <div className="wrapper">
         <LandingPageHeader />
-        <div className="section section-about-us">
+       <div className="section section-team text-center">
           <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Who we are?</h2>
-                <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
-                </h5>
-              </Col>
-            </Row>
-            <div className="separator separator-primary"></div>
-            <div className="section-story-overview">
+            <h2 className="title">Onze Doelen</h2>
+            <div className="team">
               <Row>
-                <Col md="6">
-                  <div
-                    className="image-container image-left"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")"
-                    }}
-                  >
-                    <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
-                      <br></br>
-                      <small>-NOAA</small>
-                    </p>
+                <Col md="4">
+                  <div>
+                    <img
+                      alt="..."
+                      className="img-fluid img-raised"
+                      src={require("assets/img/Vriendschappen.jpg")} border={{radius: 8} }
+                    ></img>
                   </div>
-                  <div
-                    className="image-container"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")"
-                    }}
-                  ></div>
+                  <div className="container">
+                        <h4 className="title">Vriendschappen</h4>
+                    {/*<p className="category text-info">Model</p>*/}
+                    <p className="description">
+                      Bij ons leer je nieuwe vrienden kennen! Elk semester voorzien we ook een aanbod aan ontspanningsactiviteiten. </p>
+                  </div>
                 </Col>
-                <Col md="5">
-                  <div
-                    className="image-container image-right"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")"
-                    }}
-                  ></div>
-                  <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
-                  </h3>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
-                  </p>
-                  <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
-                  </p>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
-                  </p>
+                <Col md="4">
+                  <div>
+                    <img
+                      alt="..."
+                      className="img-fluid img-raised"
+                      src={require("assets/img/Islamitischekennis.jpg")} border={{radius: 8} }
+                    ></img>
+                  </div>
+                  <div className="container">
+                        <h4 className="title">Islamitische kennis</h4>
+                    {/*<p className="category text-info">Model</p>*/}
+                    <p className="description">
+                      Door middel van lezingen willen we onze studenten de kans geven om zich te vormen en te ontwikkelen.</p>
+                  </div>
                 </Col>
+                <Col md="4">
+                  <div>
+                    <img
+                      alt="..."
+                      className="img-fluid img-raised"
+                      src={require("assets/img/Engagement.jpg")} border={{radius: 8} }
+                    ></img>
+                  </div>
+                  <div className="container">
+                        <h4 className="title">Engagement</h4>
+                    {/*<p className="category text-info">Model</p>*/}
+                    <p className="description">
+                      Zaytouna probeert, in de mate van het mogelijke, haar steentje bij te dragen aan een betere samenleving.</p>
+                  </div>
+                </Col>
+
               </Row>
             </div>
           </Container>
         </div>
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Here is our team</h2>
+            <h2 className="title">Onze waarde</h2>
             <div className="team">
               <Row>
                 <Col md="4">
@@ -133,43 +102,38 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/avatar.jpg")}
+                      src={require("assets/img/Toegankelijkheid.png")}
                     ></img>
-                    <h4 className="title">Romina Hadid</h4>
-                    <p className="category text-info">Model</p>
+                    <h4 className="title">Toegankelijkheid</h4>
+                    {/*<p className="category text-info">Model</p>*/}
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                      Op onze events is er geen voorkennis vereist zodat iedereen, ongeacht geloof of overtuiging, steeds welkom is!
+
                     </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-facebook-square"></i>
-                    </Button>
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-twitter"></i>*/}
+                    {/*</Button>*/}
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-instagram"></i>*/}
+                    {/*</Button>*/}
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-facebook-square"></i>*/}
+                    {/*</Button>*/}
                   </div>
                 </Col>
                 <Col md="4">
@@ -177,35 +141,37 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg")}
-                    ></img>
-                    <h4 className="title">Ryan Tompson</h4>
-                    <p className="category text-info">Designer</p>
+                      src={require("assets/img/Kwaliteit.png")} border={{radius: 8}
+                    }></img>
+                    <h4 className="title">Kwaliteit</h4>
+                    {/*<p className="category text-info">Model</p>*/}
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                      Zaytouna tracht kwalitatieve events te organiseren: hierbij letten we erop dat deze inhoudelijk sterk zijn en organisatorisch goed in elkaar zitten.
                     </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </Button>
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-twitter"></i>*/}
+                    {/*</Button>*/}
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-instagram"></i>*/}
+                    {/*</Button>*/}
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-facebook-square"></i>*/}
+                    {/*</Button>*/}
                   </div>
                 </Col>
                 <Col md="4">
@@ -213,43 +179,37 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg")}
+                      src={require("assets/img/Huiselijke sfeer.png")}
                     ></img>
-                    <h4 className="title">Eva Jenner</h4>
-                    <p className="category text-info">Fashion</p>
+                    <h4 className="title">Huiselijke sfeer</h4>
+                    {/*<p className="category text-info">Model</p>*/}
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                      Binnen Zaytouna proberen we steeds een huiselijke sfeer te creëren waarin iedereen zich comfortabel kan voelen.
                     </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-google-plus"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-youtube"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-twitter"></i>*/}
+                    {/*</Button>*/}
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-instagram"></i>*/}
+                    {/*</Button>*/}
+                    {/*<Button*/}
+                    {/*  className="btn-icon btn-round"*/}
+                    {/*  color="info"*/}
+                    {/*  href="#pablo"*/}
+                    {/*  onClick={(e) => e.preventDefault()}*/}
+                    {/*>*/}
+                    {/*  <i className="fab fa-facebook-square"></i>*/}
+                    {/*</Button>*/}
                   </div>
                 </Col>
               </Row>
@@ -258,8 +218,7 @@ function LandingPage() {
         </div>
         <div className="section section-contact-us text-center">
           <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
+            <h2 className="title">Contact us</h2>
             <Row>
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
@@ -273,7 +232,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="First Name..."
+                    placeholder="Voornaam en Familienaam..."
                     type="text"
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
@@ -309,7 +268,7 @@ function LandingPage() {
                   <Button
                     block
                     className="btn-round"
-                    color="info"
+                    color="#FCF6BA"
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                     size="lg"

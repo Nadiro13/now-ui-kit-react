@@ -10,35 +10,47 @@ function DefaultFooter() {
   return (
     <>
       <footer className="footer footer-default">
-        <Container>
-          <nav>
+        <Container style={{display: 'flex' ,  justifyContent:'center', alignItems:'center'}}>
+          <nav >
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=nukr-default-footer"
+                  href="https://belchicken.com/"
                   target="_blank"
                 >
-                  Creative Tim
+                  <img alt="..."  src={require("assets/img/Belchicken.png")} width="100" height="100"></img>
                 </a>
+
               </li>
               <li>
                 <a
-                  href="http://presentation.creative-tim.com?ref=nukr-default-footer"
+                  href="https://www.simpizza.be/"
                   target="_blank"
                 >
-                  About Us
+                  <img
+                      alt="..."
+
+                      src={require("assets/img/Simpizza.png")} width="200" height="200"></img>
                 </a>
+
               </li>
               <li>
                 <a
-                  href="http://blog.creative-tim.com?ref=nukr-default-footer"
+                  href="https://www.kingslizepizza.be/"
                   target="_blank"
                 >
-                  Blog
+                  <img
+                      alt="..."
+
+                      src={require("assets/img/Kingslize.jpg")} width="100" height="100"></img>
                 </a>
+
               </li>
             </ul>
           </nav>
+
+        </Container>
+        <Container   style={{display: 'flex' ,  justifyContent:'center'}}>
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed by{" "}
             <a

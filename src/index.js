@@ -30,6 +30,7 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import GebedsRuimtes from "views/examples/GebedsRuimtes"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,25 +38,25 @@ root.render(
   <BrowserRouter>
     <Switch>
       <Switch>
-        <Route path="/index" render={(props) => <Index {...props} />} />
+        {/*<Route path="/index" render={(props) => <Index {...props} />} />*/}
+        {/*<Route*/}
+        {/*  path="/nucleo-icons"*/}
+        {/*  render={(props) => <NucleoIcons {...props} />}*/}
+        {/*/>*/}
         <Route
-          path="/nucleo-icons"
-          render={(props) => <NucleoIcons {...props} />}
-        />
-        <Route
-          path="/landing-page"
+          path="/"
           render={(props) => <LandingPage {...props} />}
         />
         <Route
-          path="/profile-page"
-          render={(props) => <ProfilePage {...props} />}
+          path="/gebed"
+          render={(props) => <GebedsRuimtes {...props} />}
         />
-        <Route
-          path="/login-page"
-          render={(props) => <LoginPage {...props} />}
-        />
-        <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
+        {/*<Route*/}
+        {/*  path="/login-page"*/}
+        {/*  render={(props) => <LoginPage {...props} />}*/}
+        {/*/>*/}
+        <Redirect to="/" />
+        <Redirect from="/index" to="/" />
       </Switch>
     </Switch>
   </BrowserRouter>
