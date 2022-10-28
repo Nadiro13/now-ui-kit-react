@@ -23,14 +23,14 @@ function ExamplesNavbar() {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
+        document.body.scrollTop > 699
       ) {
         setNavbarColor("");
       } else if (
         document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
+        document.body.scrollTop < 700
       ) {
-        setNavbarColor("navbar-transparent");
+        setNavbarColor("");
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
