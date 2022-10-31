@@ -119,7 +119,7 @@ now-ui-kit-react
         ├── examples
         │   ├── LandingPage.js
         │   ├── LoginPage.js
-        │   └── ProfilePage.js
+        │   └── Events.js
         └── index-sections
             ├── BasicElements.js
             ├── Carousel.js

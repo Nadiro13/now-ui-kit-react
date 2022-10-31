@@ -10,30 +10,9 @@ function DefaultFooter() {
   return (
     <>
       <footer className="footer footer-default">
-        <Container style={{display: 'flex' ,  justifyContent:'center', alignItems:'center'}}>
-          <nav >
-            <ul>
-              <li>
-                <a
-                  href="https://belchicken.com/"
-                  target="_blank"
-                >
-                  <img alt="..."  src={require("assets/img/Belchicken.png")} width="100" height="100"></img>
-                </a>
-
-              </li>
-              <li>
-                <a
-                  href="https://www.simpizza.be/"
-                  target="_blank"
-                >
-                  <img
-                      alt="..."
-
-                      src={require("assets/img/Simpizza.png")} width="200" height="200"></img>
-                </a>
-
-              </li>
+        <Container style={{ flexDirection: 'column', display: 'flex' ,  justifyContent:'center', alignItems:'center'}}>
+          <nav style={{display: 'flex' ,  justifyContent:'center', alignItems:'center'}}>
+            <ul style={{display: 'flex' ,  justifyContent:'center', alignItems:'center'}}>
               <li>
                 <a
                   href="https://www.kingslizepizza.be/"
@@ -46,6 +25,40 @@ function DefaultFooter() {
                 </a>
 
               </li>
+              <li>
+                <a
+                  href="https://belchicken.com/"
+                  target="_blank"
+                >
+                  <img alt="..."  src={require("assets/img/Belchicken.png")} width="100" height="100"></img>
+                </a>
+
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100083127860982"
+                  target="_blank"
+                >
+                  <img
+                      alt="..."
+
+                      src={require("assets/img/Honey_Bunny.png")} width="100" height="100"></img>
+                </a>
+
+              </li>
+              <li>
+                <a
+                  href="https://www.simpizza.be/"
+                  target="_blank"
+                >
+                  <img
+                      alt="..."
+
+                      src={require("assets/img/Simpizza.png")} width="130" height="100"></img>
+                </a>
+
+              </li>
+
             </ul>
           </nav>
 

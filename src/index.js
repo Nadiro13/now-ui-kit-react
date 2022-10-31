@@ -26,11 +26,11 @@ import "assets/demo/demo.css?v=1.5.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
 // pages for this kit
 import Index from "views/Index.js";
+import GebedsRuimtes from "views/examples/GebedsRuimtes.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import GebedsRuimtes from "views/examples/GebedsRuimtes"
+import Events from "views/examples/Events.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -44,19 +44,26 @@ root.render(
         {/*  render={(props) => <NucleoIcons {...props} />}*/}
         {/*/>*/}
         <Route
-          path="/"
+          path="/index"
           render={(props) => <LandingPage {...props} />}
+        />
+        <Route
+          path="/events"
+          render={(props) => <Events {...props} />}
         />
         <Route
           path="/gebed"
           render={(props) => <GebedsRuimtes {...props} />}
         />
+
+
         {/*<Route*/}
-        {/*  path="/login-page"*/}
+        {/*  path="/login"*/}
         {/*  render={(props) => <LoginPage {...props} />}*/}
         {/*/>*/}
-        <Redirect to="/" />
-        <Redirect from="/index" to="/" />
+
+        <Redirect to="/index" />
+        <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
   </BrowserRouter>

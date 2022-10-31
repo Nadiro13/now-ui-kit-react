@@ -30,7 +30,7 @@ const items = [
   }
 ];
 
-function CarouselSection() {
+function CarouselSection(props) {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -41,12 +41,12 @@ function CarouselSection() {
   };
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === props.items.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
   const previous = () => {
     if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? props.items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
   const goToIndex = (newIndex) => {
@@ -57,9 +57,7 @@ function CarouselSection() {
     <>
       <div className="section" id="carousel">
         <Container>
-          <div className="title">
-            <h4>Carousel</h4>
-          </div>
+
           <Row className="justify-content-center">
             <Col lg="8" md="12">
               <Carousel
@@ -68,11 +66,11 @@ function CarouselSection() {
                 previous={previous}
               >
                 <CarouselIndicators
-                  items={items}
+                  items={props.items}
                   activeIndex={activeIndex}
                   onClickHandler={goToIndex}
                 />
-                {items.map((item) => {
+                {props.items.map((item) => {
                   return (
                     <CarouselItem
                       onExiting={onExiting}

@@ -49,8 +49,15 @@ function ExamplesNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
-        <Container>
+      <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg" style={{ alignItems:'center'}}>
+        <Container style={{ alignItems:'center'}}>
+          <NavLink to="/" tag={Link} style={{ maxHeight: 40,flexDirection: 'column', display: 'flex' ,  justifyContent:'center', alignItems:'center'}}>
+              <img
+                      alt="..."
+                      src={require("assets/img/ZaytounaLogo - wit.png")}
+                      style={{ maxHeight: "55px"}}
+                    ></img>
+            </NavLink>
           <UncontrolledDropdown className="button-dropdown">
             {/*<DropdownToggle*/}
             {/*  caret*/}
@@ -117,11 +124,11 @@ function ExamplesNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/index" tag={Link}>
+                <NavLink to="/" tag={Link}>
                   Home
                 </NavLink>
               </NavItem>
-              <NavLink to="/index" tag={Link}>
+              <NavLink  to="/events" tag={Link} >
                   Events
                 </NavLink>
               <NavLink to="/gebed" tag={Link}>

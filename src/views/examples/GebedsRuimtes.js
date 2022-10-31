@@ -17,18 +17,19 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 import Images from "../index-sections/Images";
+import Carousel from "../index-sections/Carousel";
 
 function GebedsRuimtes() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+    const B = (props) => <p style={{fontWeight: 'bold'}}>{props.children}</p>
+
   React.useEffect(() => {
-    document.body.classList.add("landing-page");
+    document.body.classList.add("gebedsruimtes");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     return function cleanup() {
-      document.body.classList.remove("landing-page");
+      document.body.classList.remove("gebedsruimtes");
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
@@ -36,66 +37,57 @@ function GebedsRuimtes() {
     <>
       <ExamplesNavbar />
       <div className="wrapper">
-        <LandingPageHeader />
-       <div className="section section-team text-center">
-          <Container>
-            <h2 className="title">Onze Doelen</h2>
-            <div className="team">
-              <Row>
-                <Col md="4">
-                  <div>
-                    <img
-                      alt="..."
-                      className="img-fluid img-raised"
-                      src={require("assets/img/Vriendschappen.jpg")} border={{radius: 8} }
-                    ></img>
-                  </div>
-                  <div className="container">
-                        <h4 className="title">Vriendschappen</h4>
-                    {/*<p className="category text-info">Model</p>*/}
-                    <p className="description">
-                      Bij ons leer je nieuwe vrienden kennen! Elk semester voorzien we ook een aanbod aan ontspanningsactiviteiten. </p>
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div>
-                    <img
-                      alt="..."
-                      className="img-fluid img-raised"
-                      src={require("assets/img/Islamitischekennis.jpg")} border={{radius: 8} }
-                    ></img>
-                  </div>
-                  <div className="container">
-                        <h4 className="title">Islamitische kennis</h4>
-                    {/*<p className="category text-info">Model</p>*/}
-                    <p className="description">
-                      Door middel van lezingen willen we onze studenten de kans geven om zich te vormen en te ontwikkelen.</p>
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div>
-                    <img
-                      alt="..."
-                      className="img-fluid img-raised"
-                      src={require("assets/img/Engagement.jpg")} border={{radius: 8} }
-                    ></img>
-                  </div>
-                  <div className="container">
-                        <h4 className="title">Engagement</h4>
-                    {/*<p className="category text-info">Model</p>*/}
-                    <p className="description">
-                      Zaytouna probeert, in de mate van het mogelijke, haar steentje bij te dragen aan een betere samenleving.</p>
-                  </div>
-                </Col>
+        {/*<LandingPageHeader />*/}
+        {/*  <Row style={{ fdisplay: 'flex' ,  justifyContent:'center', alignItems:'center'}} >*/}
+        {/*  /!*<h2 className="title"> Gebedsruimtes </h2> *!/ <img*/}
+        {/*              alt="..."*/}
 
-              </Row>
-            </div>
-          </Container>
+        {/*              src={require("assets/img/Zey2-01.png")} width="100" height="100"></img>*/}
+
+
+
+        {/*</Row>*/}
+       <div className="section section-team text-center">
+           <Row>
+               <p></p>
+           </Row>
+
+           <Col className="ml-auto mr-auto" md="10">
+
+         <Row className="collections">
+            <Col md="6">
+                <h2 className="title">Campus Dunant stiltekamer</h2>
+                <div>
+                <img
+                      alt="..."
+                      className="img-fluid img-raised"
+                      src={require("assets/img/Gebedsruimte psychologie/WhatsApp Image 2022-10-29 at 21.52.05.jpeg")} style={{maxHeight:"200px"} }
+                    ></img>
+                  </div>
+            </Col>
+              <Col md="6" style={{ flexDirection: 'column', display: 'flex' ,  justifyContent:'center', alignItems:'center'}}>
+                  <h2> Henri Dunantlaan 2</h2>
+
+
+                  <p className="description">
+
+
+Op de derde verdieping vind je deze stiltekamer!</p>
+
+
+            </Col>
+         </Row>
+          <Row>
+              {/*<Carousel items={items12}/>*/}
+          </Row>
+
+      </Col>
+
         </div>
 
 
-        <DefaultFooter />
       </div>
+        <DefaultFooter />
     </>
   );
 }

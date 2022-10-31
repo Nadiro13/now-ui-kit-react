@@ -37,26 +37,20 @@ function LandingPage() {
       <ExamplesNavbar />
       <div className="wrapper">
         <LandingPageHeader />
+        {/*<Row style={{ fdisplay: 'flex' ,  justifyContent:'center', alignItems:'center'}} >*/}
+        {/*  <h2 className="title"> Home </h2> <img*/}
+        {/*              alt="..."*/}
+
+        {/*              src={require("assets/img/Zey-01.png")} width="100" height="100"></img>*/}
+
+
+
+        {/*</Row>*/}
        <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Onze Doelen</h2>
+            <h2 className="title">Onze doelen</h2>
             <div className="team">
               <Row>
-                <Col md="4">
-                  <div>
-                    <img
-                      alt="..."
-                      className="img-fluid img-raised"
-                      src={require("assets/img/Vriendschappen.jpg")} border={{radius: 8} }
-                    ></img>
-                  </div>
-                  <div className="container">
-                        <h4 className="title">Vriendschappen</h4>
-                    {/*<p className="category text-info">Model</p>*/}
-                    <p className="description">
-                      Bij ons leer je nieuwe vrienden kennen! Elk semester voorzien we ook een aanbod aan ontspanningsactiviteiten. </p>
-                  </div>
-                </Col>
                 <Col md="4">
                   <div>
                     <img
@@ -72,6 +66,22 @@ function LandingPage() {
                       Door middel van lezingen willen we onze studenten de kans geven om zich te vormen en te ontwikkelen.</p>
                   </div>
                 </Col>
+                <Col md="4">
+                  <div>
+                    <img
+                      alt="..."
+                      className="img-fluid img-raised"
+                      src={require("assets/img/Vriendschappen.jpg")} border={{radius: 8} }
+                    ></img>
+                  </div>
+                  <div className="container">
+                        <h4 className="title">Vriendschappen</h4>
+                    {/*<p className="category text-info">Model</p>*/}
+                    <p className="description">
+                      Bij ons leer je nieuwe vrienden kennen! Elk semester voorzien we ook een aanbod aan ontspanningsactiviteiten. </p>
+                  </div>
+                </Col>
+
                 <Col md="4">
                   <div>
                     <img
@@ -94,7 +104,7 @@ function LandingPage() {
         </div>
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Onze waarde</h2>
+            <h2 className="title">Onze waarden</h2>
             <div className="team">
               <Row>
                 <Col md="4">
@@ -218,7 +228,7 @@ function LandingPage() {
         </div>
         <div className="section section-contact-us text-center">
           <Container>
-            <h2 className="title">Contact us</h2>
+            <h2 className="title">Contacteer ons</h2>
             <Row>
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
@@ -259,7 +269,7 @@ function LandingPage() {
                   <Input
                     cols="80"
                     name="name"
-                    placeholder="Type a message..."
+                    placeholder="Typ een bericht..."
                     rows="4"
                     type="textarea"
                   ></Input>
@@ -273,7 +283,7 @@ function LandingPage() {
                     onClick={(e) => e.preventDefault()}
                     size="lg"
                   >
-                    Send Message
+                    Verstuur Bericht
                   </Button>
                 </div>
               </Col>
