@@ -36,6 +36,9 @@ function GebedsRuimtes() {
   return (
     <>
       <ExamplesNavbar />
+        <Row>
+            <p></p>
+        </Row>
       <div className="wrapper">
         {/*<LandingPageHeader />*/}
         {/*  <Row style={{ fdisplay: 'flex' ,  justifyContent:'center', alignItems:'center'}} >*/}

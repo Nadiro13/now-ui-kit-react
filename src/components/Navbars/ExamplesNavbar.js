@@ -17,7 +17,7 @@ import {
 } from "reactstrap";
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarColor, setNavbarColor] = React.useState("");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {
@@ -30,7 +30,7 @@ function ExamplesNavbar() {
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
       ) {
-        setNavbarColor("navbar-transparent");
+        setNavbarColor("");
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -134,6 +134,7 @@ function ExamplesNavbar() {
               <NavLink to="/gebed" tag={Link}>
                   Gebedsruimtes
               </NavLink>
+
 
             </Nav>
           </Collapse>

@@ -43,10 +43,7 @@ root.render(
         {/*  path="/nucleo-icons"*/}
         {/*  render={(props) => <NucleoIcons {...props} />}*/}
         {/*/>*/}
-        <Route
-          path="/index"
-          render={(props) => <LandingPage {...props} />}
-        />
+
         <Route
           path="/events"
           render={(props) => <Events {...props} />}
@@ -55,6 +52,10 @@ root.render(
           path="/gebed"
           render={(props) => <GebedsRuimtes {...props} />}
         />
+        <Route
+          path="/"
+          render={(props) => <LandingPage {...props} />}
+        />
 
 
         {/*<Route*/}
@@ -62,8 +63,8 @@ root.render(
         {/*  render={(props) => <LoginPage {...props} />}*/}
         {/*/>*/}
 
-        <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
+        <Redirect to="/" />
+        <Redirect from="/index" to="/" />
       </Switch>
     </Switch>
   </BrowserRouter>

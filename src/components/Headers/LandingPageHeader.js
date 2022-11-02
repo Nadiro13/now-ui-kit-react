@@ -52,7 +52,7 @@ function LandingPageHeader() {
         <div
     className="page-header-image"
     style={{
-      backgroundImage: "url(" + require("assets/img/Banner_Website.jpg") + ")"
+      backgroundImage: "url(" + require("assets/img/1200px-Domes_of_Zitouna_Mosque_JUIST.jpg") + ")"
     }}
     ref={pageHeader}
     />
