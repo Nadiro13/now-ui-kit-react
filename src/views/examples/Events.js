@@ -53,6 +53,7 @@ function Events() {
              style={{  justifyContent:'center', alignItems:'center'}}
 
            onClick={(e) => {
+               window.scrollTo(0, 0);
              e.preventDefault();
              setPage('0' );
 
@@ -75,8 +76,7 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('20' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
            }}>
 
                   <img
@@ -92,8 +92,7 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('17' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
            }}>
 
                   <img
@@ -109,8 +108,7 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('14' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
            }}>
 
                   <img
@@ -131,8 +129,7 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('19' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
            }}>
 
                   <img
@@ -148,8 +145,7 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('16' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
            }}>
 
                   <img
@@ -165,8 +161,7 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('13' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
            }}>
 
                   <img
@@ -186,8 +181,7 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('18' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
            }}>
 
                   <img
@@ -203,8 +197,8 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('15' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
+
            }}>
 
                   <img
@@ -220,8 +214,8 @@ function Events() {
                 onClick={(e) => {
              e.preventDefault();
              setPage('12' );
-             console.log(page);
-             console.log(evList)
+             window.scrollTo(0, 0);
+             console.log(page)
            }}>
 
                   <img
@@ -781,6 +775,8 @@ function Events() {
                   {events16}
                   {events15}
                   {events14}
+                  {events13}
+                  {events12}
 
               </TabContent>
               <Col className="ml-auto mr-auto" md="6" >
